@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="js/bootstrap.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <audio controls autoplay>
+        <source src="assets/audio/redflavor.mp3" type="audio/mpeg">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    </audio>
+</head>
+
+<body onload="startUp()">
+    <div class="container-fluid">
+
+            <div class="row">
+                <div class="heading">
+                    <h1>Hangman</h1>
+                    <h3>What is the name of fruit?</h3>
+                </div>
+                <div class="hangman-game">
+                    <div class="instruction">
+                        <p>Press any keys to start playing!</p>
+                        <div id="game">
+                            <input id="letter" type="text">
+                            <input type="button" onClick="Letter()" value="My Guess">
+                            <p id="answer"> </p>
+                            <p id="lives"> </p>
+                            <p id="guess"> </p>
+                            <p id="winCounter"></p>
+                            <p id="lossCounter"></p>
+                            <p id="wrongGuesses"></p>
+                            <input id="clear" type="button" onClick="empty()" value="Clear">
+                        </div>
+                    </div>
+                </div>
+                <div class="background-image">
+                    <img src="assets/images/redvelvet.jpg">
+                </div>
+      
+    	</div>
+    </div>
+  
+    
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
